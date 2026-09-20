@@ -1,0 +1,42 @@
+# A second rubric to show the grader is not tied to sales.
+# Same engine, different criteria and weights - this is the whole point of
+# keeping the rubric in config instead of in code.
+
+name: Customer Support
+pass_at: 75
+
+criteria:
+  - id: identification
+    name: Issue identification
+    weight: 20
+    description: >
+      Agent correctly understands what the customer is actually asking about
+      before answering, and asks a clarifying question when the request is
+      ambiguous.
+
+  - id: accuracy
+    name: Answer accuracy
+    weight: 30
+    description: >
+      Information given matches the knowledge base / policy. No invented
+      policies, refund amounts, or timelines.
+
+  - id: resolution
+    name: Resolution or escalation
+    weight: 25
+    description: >
+      Agent either resolves the issue or escalates it correctly when it is
+      out of scope, instead of leaving the customer stuck.
+
+  - id: empathy
+    name: Empathy
+    weight: 15
+    description: >
+      Agent acknowledges frustration or difficulty appropriately without being
+      dismissive or robotic.
+
+  - id: tone
+    name: Tone & naturalness
+    weight: 10
+    description: >
+      Natural, responsive language rather than canned blocks.

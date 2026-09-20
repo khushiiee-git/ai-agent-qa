@@ -1,0 +1,60 @@
+# Rubric for grading outbound sales calls made by an AI voice agent.
+#
+# The grader is rubric-agnostic: it reads whatever criteria and weights are
+# defined here, so a different team can drop in their own rubric (see
+# support.yaml) without touching any code.
+#
+# weight  -> relative importance; weights are normalised, they don't have to sum to 100
+# scale   -> each criterion is scored 1-5 by the judge
+# pass_at -> a call "passes" overall when its weighted score is >= this (percent)
+
+name: Outbound Sales (real estate)
+pass_at: 70
+
+criteria:
+  - id: opening
+    name: Opening & identity
+    weight: 10
+    description: >
+      Agent states who it is, the company, and why it is calling within the
+      first couple of turns. Confirms it is speaking to the right person and
+      checks it's an okay time.
+
+  - id: discovery
+    name: Needs discovery
+    weight: 20
+    description: >
+      Agent qualifies the lead before pitching - intent (end-use vs
+      investment), budget range, and timeline. Asks before telling.
+
+  - id: accuracy
+    name: Factual accuracy
+    weight: 25
+    description: >
+      Every price, discount, yield, area, or handover date the agent states
+      is supported by the approved information. The agent does not invent
+      offers or commitments. This is the most heavily weighted criterion
+      because a made-up price is a real commercial and legal risk.
+
+  - id: objection
+    name: Objection handling
+    weight: 20
+    description: >
+      When the lead raises a concern (price, timeline, trust), the agent
+      acknowledges it and responds with a concrete, truthful reframe rather
+      than ignoring it or giving up.
+
+  - id: cta
+    name: Clear next step
+    weight: 15
+    description: >
+      Agent proposes a specific next step (site visit or callback) with a
+      day/time and confirms contact details. A call with no next step is a
+      dropped lead.
+
+  - id: tone
+    name: Tone & naturalness
+    weight: 10
+    description: >
+      Agent sounds natural and responsive to what the lead actually said,
+      rather than reading long scripted blocks or ignoring the lead's replies.

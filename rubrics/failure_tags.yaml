@@ -1,0 +1,35 @@
+# The failure taxonomy. These are the specific, named ways a call can go
+# wrong that we want flagged on individual turns - separate from the 1-5
+# criterion scores. Severity drives alerting: a single `critical` flag is
+# worth escalating even if the overall score looks okay.
+
+tags:
+  - id: hallucination
+    name: Hallucinated fact or price
+    severity: critical
+    description: The agent stated a price, discount, or commitment not supported by approved info.
+
+  - id: compliance
+    name: Compliance / disclosure miss
+    severity: critical
+    description: A required disclosure or regulatory step was skipped (e.g. NRI payment rules).
+
+  - id: gave_up
+    name: Gave up after one objection
+    severity: warning
+    description: The agent abandoned the call after a single objection without any reframe.
+
+  - id: off_script
+    name: Off-script / wrong info
+    severity: warning
+    description: The agent went off the approved flow or gave information that was not quite right.
+
+  - id: robotic
+    name: Robotic / unnatural
+    severity: warning
+    description: Long scripted monologue or ignoring what the customer actually said.
+
+  - id: no_capture
+    name: Required info not captured
+    severity: warning
+    description: The agent failed to capture a required field (contact, timeline, consent).
