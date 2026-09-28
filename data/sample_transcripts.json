@@ -1,0 +1,110 @@
+[
+  {
+    "id": "C-1042",
+    "agent_version": "v2.3",
+    "lead": "Rahul M. - 2BHK enquiry",
+    "outcome": "Site visit booked",
+    "transcript": [
+      {"speaker": "agent", "text": "Hi, am I speaking with Rahul? This is Radhika calling from ASBL about your enquiry on the 2BHK homes."},
+      {"speaker": "customer", "text": "Yes, that's me. I filled a form a few days back."},
+      {"speaker": "agent", "text": "Perfect. Just so I share the right options - are you looking for this as a home to move into, or more as an investment?"},
+      {"speaker": "customer", "text": "To live in, within the next 6 months ideally."},
+      {"speaker": "agent", "text": "Got it. And is there a budget range you're working within, roughly?"},
+      {"speaker": "customer", "text": "Around 1.2 crore, but honestly the prices I saw felt a bit high."},
+      {"speaker": "agent", "text": "I hear that a lot. One thing that helps - we have a construction-linked plan, so you pay in stages as the build progresses rather than all upfront. Would it help if I walked you through that at a site visit?"},
+      {"speaker": "customer", "text": "Yeah, that could work. Saturday maybe."},
+      {"speaker": "agent", "text": "Saturday it is. I'll block 11am and send you the location and a confirmation on WhatsApp. Does that number work?"},
+      {"speaker": "customer", "text": "Yes, same number."}
+    ]
+  },
+  {
+    "id": "C-1067",
+    "agent_version": "v2.3",
+    "lead": "Priya S. - 3BHK, pricing",
+    "outcome": "Lost - no next step",
+    "transcript": [
+      {"speaker": "agent", "text": "Hello, is this Priya? Radhika here from ASBL regarding the 3BHK you enquired about."},
+      {"speaker": "customer", "text": "Yes. What's the price on the 3BHK?"},
+      {"speaker": "agent", "text": "The 3BHK starts around 1.8 crore."},
+      {"speaker": "customer", "text": "That's more than I expected."},
+      {"speaker": "agent", "text": "I can offer you a special 5% discount if you book this week - that brings it to about 7,900 per square foot, which is the lowest we've ever done."},
+      {"speaker": "customer", "text": "Hmm, I'm not sure. It's still high for me."},
+      {"speaker": "agent", "text": "I understand."},
+      {"speaker": "customer", "text": "Let me think about it."},
+      {"speaker": "agent", "text": "Sure, no problem. Have a good day."}
+    ]
+  },
+  {
+    "id": "C-1071",
+    "agent_version": "v2.3",
+    "lead": "Imran K. - investor",
+    "outcome": "Callback scheduled",
+    "transcript": [
+      {"speaker": "agent", "text": "Hello Imran, this is Radhika from ASBL about your investment enquiry."},
+      {"speaker": "customer", "text": "Hi, yes. I'm comparing a few projects right now."},
+      {"speaker": "agent", "text": "Understood. May I ask what return horizon you're targeting?"},
+      {"speaker": "customer", "text": "3 to 5 years, looking at rental yield mainly."},
+      {"speaker": "agent", "text": "Our current rental yields in this micro-market are in the 3 to 3.5 percent range, and handover is scheduled for Q4 2027."},
+      {"speaker": "customer", "text": "Okay. How does that compare to the tower next door?"},
+      {"speaker": "agent", "text": "ASBL offers premium amenities including a clubhouse, swimming pool, gymnasium, landscaped gardens, and 24-hour security with CCTV surveillance across all common areas and dedicated visitor parking."},
+      {"speaker": "customer", "text": "Right... that wasn't quite my question, but okay."},
+      {"speaker": "agent", "text": "Would a callback tomorrow at 5pm work to go deeper on the numbers?"},
+      {"speaker": "customer", "text": "Sure, that's fine."}
+    ]
+  },
+  {
+    "id": "C-1120",
+    "agent_version": "v2.4",
+    "lead": "Sneha R. - 2BHK, first-time",
+    "outcome": "Site visit booked",
+    "transcript": [
+      {"speaker": "agent", "text": "Hi, is this Sneha? It's Radhika from ASBL - you'd asked about the 2BHK homes, is now an okay time for two minutes?"},
+      {"speaker": "customer", "text": "Yes, now's fine."},
+      {"speaker": "agent", "text": "Lovely. Is this your first home, or have you bought before? Just helps me pitch it right."},
+      {"speaker": "customer", "text": "First one, yeah. A bit nervous about the whole process honestly."},
+      {"speaker": "agent", "text": "Totally normal - I'll keep it simple. What matters most to you: location, budget, or possession timeline?"},
+      {"speaker": "customer", "text": "Budget first, then location. We can stretch to about a crore."},
+      {"speaker": "agent", "text": "That works well for the 2BHK, which sits in that range depending on the floor. Nothing hidden - I'll show you the full cost sheet on the visit so there are no surprises."},
+      {"speaker": "customer", "text": "That would really help. I've heard stories about hidden charges."},
+      {"speaker": "agent", "text": "Completely fair worry. Let's get you in to see it - would this weekend suit, Saturday or Sunday?"},
+      {"speaker": "customer", "text": "Sunday morning."},
+      {"speaker": "agent", "text": "Done - Sunday 11am. I'll confirm on WhatsApp with the address and the cost sheet attached. Same number ending 4471?"},
+      {"speaker": "customer", "text": "Yes, that's the one."}
+    ]
+  },
+  {
+    "id": "C-1138",
+    "agent_version": "v2.4",
+    "lead": "Arjun T. - NRI, compliance",
+    "outcome": "Lost - flagged",
+    "transcript": [
+      {"speaker": "agent", "text": "Hello Arjun, Radhika from ASBL here about your enquiry - I believe you're based in Dubai?"},
+      {"speaker": "customer", "text": "Yes, I'm an NRI, looking to invest back home."},
+      {"speaker": "agent", "text": "Wonderful. Are you looking at this purely as investment, or a future home too?"},
+      {"speaker": "customer", "text": "Investment for now, maybe retire there later."},
+      {"speaker": "agent", "text": "Makes sense. The 3BHK would suit that well for both yield and resale."},
+      {"speaker": "customer", "text": "How does payment work from abroad?"},
+      {"speaker": "agent", "text": "You can pay through your NRE account and we'll handle the paperwork - I can connect you with our relationship manager to set it up this week."},
+      {"speaker": "customer", "text": "Okay, send me the details."},
+      {"speaker": "agent", "text": "Will do. I'll have the RM reach out tomorrow."}
+    ]
+  },
+  {
+    "id": "C-1155",
+    "agent_version": "v2.4",
+    "lead": "Deepa N. - 3BHK, timeline",
+    "outcome": "Site visit booked",
+    "transcript": [
+      {"speaker": "agent", "text": "Hi Deepa, this is Radhika from ASBL about the 3BHK - got a quick minute?"},
+      {"speaker": "customer", "text": "Yes, briefly."},
+      {"speaker": "agent", "text": "I'll be quick. What's driving the search - upgrading, relocating, or investment?"},
+      {"speaker": "customer", "text": "Upgrading, we've outgrown our current place. But I'm worried about possession delays, that's happened to friends."},
+      {"speaker": "agent", "text": "A very real concern. Our handover date is RERA-registered for Q4 2027, so it's a committed, legally-backed timeline, not just a promise."},
+      {"speaker": "customer", "text": "That's reassuring actually."},
+      {"speaker": "agent", "text": "Best way to feel confident is to see the construction progress yourself. Could I set up a site visit this week?"},
+      {"speaker": "customer", "text": "Thursday evening works."},
+      {"speaker": "agent", "text": "Thursday 6pm booked. WhatsApp confirmation coming your way now."},
+      {"speaker": "customer", "text": "Great, thanks."}
+    ]
+  }
+]

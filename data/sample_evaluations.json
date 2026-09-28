@@ -1,0 +1,82 @@
+{
+  "_comment": "Pre-computed grades for the sample transcripts so the repo runs end-to-end WITHOUT an API key. With ANTHROPIC_API_KEY set, run.py regrades the same transcripts live and ignores this file. These were produced by the grader on the sales_outbound rubric.",
+  "C-1042": {
+    "summary": "Strong call. Agent identified itself, qualified intent, timeline and budget, reframed the price objection with a construction-linked plan, and booked a Saturday visit. Minor stiffness but no accuracy or compliance issues.",
+    "criterion_scores": [
+      {"criterion_id": "opening", "score": 5, "reasoning": "Named self, company and reason, confirmed the right person.", "evidence_turns": [0]},
+      {"criterion_id": "discovery", "score": 4, "reasoning": "Qualified end-use, timeline and budget before pitching.", "evidence_turns": [2, 4]},
+      {"criterion_id": "accuracy", "score": 5, "reasoning": "No specific figures stated beyond an approved payment-plan concept.", "evidence_turns": [6]},
+      {"criterion_id": "objection", "score": 4, "reasoning": "Acknowledged the price worry and reframed with the staged-payment option.", "evidence_turns": [6]},
+      {"criterion_id": "cta", "score": 5, "reasoning": "Booked a specific day/time and confirmed the contact number.", "evidence_turns": [8]},
+      {"criterion_id": "tone", "score": 4, "reasoning": "Warm and responsive, slightly templated in one transition.", "evidence_turns": [6]}
+    ],
+    "flags": []
+  },
+  "C-1067": {
+    "summary": "Agent invented a 5% discount and a per-sqft figure that are not in the approved pricing, then abandoned the call after the first objection with no reframe or next step.",
+    "criterion_scores": [
+      {"criterion_id": "opening", "score": 5, "reasoning": "Clean identification.", "evidence_turns": [0]},
+      {"criterion_id": "discovery", "score": 2, "reasoning": "Went straight to price with no qualification of intent, budget or timeline.", "evidence_turns": [2]},
+      {"criterion_id": "accuracy", "score": 2, "reasoning": "Stated a 5% discount and a 7,900/sqft figure presented as a record low - not supported by approved pricing.", "evidence_turns": [4]},
+      {"criterion_id": "objection", "score": 2, "reasoning": "Did not address the affordability concern; offered nothing after the discount fell flat.", "evidence_turns": [6, 8]},
+      {"criterion_id": "cta", "score": 2, "reasoning": "Ended the call with no attempt at a site visit or callback.", "evidence_turns": [8]},
+      {"criterion_id": "tone", "score": 3, "reasoning": "Polite but flat and disengaged once resistance appeared.", "evidence_turns": [6]}
+    ],
+    "flags": [
+      {"tag": "hallucination", "turn_index": 4, "reasoning": "Discount and per-sqft price are fabricated commitments."},
+      {"tag": "gave_up", "turn_index": 8, "reasoning": "Closed the call after a single soft objection."}
+    ]
+  },
+  "C-1071": {
+    "summary": "Accurate and reasonably qualified, but delivery was robotic - a long amenities monologue that ignored the customer's actual comparison question. Booked a callback.",
+    "criterion_scores": [
+      {"criterion_id": "opening", "score": 4, "reasoning": "Identified self and reason, slightly abrupt.", "evidence_turns": [0]},
+      {"criterion_id": "discovery", "score": 4, "reasoning": "Asked about return horizon and yield focus.", "evidence_turns": [2]},
+      {"criterion_id": "accuracy", "score": 5, "reasoning": "Yield range and handover date stated plausibly and within approved info.", "evidence_turns": [4]},
+      {"criterion_id": "objection", "score": 3, "reasoning": "Did not really answer the comparison question that was raised.", "evidence_turns": [6]},
+      {"criterion_id": "cta", "score": 4, "reasoning": "Secured a callback with a specific time.", "evidence_turns": [8]},
+      {"criterion_id": "tone", "score": 2, "reasoning": "Scripted amenities block, non-responsive to the customer.", "evidence_turns": [6]}
+    ],
+    "flags": [
+      {"tag": "robotic", "turn_index": 6, "reasoning": "Long canned amenities list instead of answering the question asked."}
+    ]
+  },
+  "C-1120": {
+    "summary": "Model call on v2.4. Thorough discovery, accurate framing within the approved band, warm and responsive tone, and a confidently booked visit with contact confirmed.",
+    "criterion_scores": [
+      {"criterion_id": "opening", "score": 5, "reasoning": "Identified self, confirmed person, checked timing.", "evidence_turns": [0]},
+      {"criterion_id": "discovery", "score": 5, "reasoning": "Asked first-time status and ranked priorities before pitching.", "evidence_turns": [2, 4]},
+      {"criterion_id": "accuracy", "score": 5, "reasoning": "Kept to an approved range and offered a full cost sheet rather than inventing numbers.", "evidence_turns": [6]},
+      {"criterion_id": "objection", "score": 5, "reasoning": "Addressed the hidden-charges worry directly with transparency.", "evidence_turns": [6, 8]},
+      {"criterion_id": "cta", "score": 5, "reasoning": "Booked a specific slot and confirmed the number.", "evidence_turns": [10]},
+      {"criterion_id": "tone", "score": 5, "reasoning": "Natural, reassuring, well-paced.", "evidence_turns": [4, 8]}
+    ],
+    "flags": []
+  },
+  "C-1138": {
+    "summary": "Good rapport and discovery, but the agent discussed NRI payment routing without the mandatory regulatory disclosure the script requires for overseas buyers - a compliance miss that outweighs the otherwise solid call.",
+    "criterion_scores": [
+      {"criterion_id": "opening", "score": 4, "reasoning": "Identified self and context well.", "evidence_turns": [0]},
+      {"criterion_id": "discovery", "score": 4, "reasoning": "Clarified investment vs end-use intent.", "evidence_turns": [2]},
+      {"criterion_id": "accuracy", "score": 4, "reasoning": "Product fit stated reasonably; no invented figures.", "evidence_turns": [4]},
+      {"criterion_id": "objection", "score": 3, "reasoning": "Handled the payment query but shallowly.", "evidence_turns": [6]},
+      {"criterion_id": "cta", "score": 3, "reasoning": "Handed off to an RM rather than securing a firm next step itself.", "evidence_turns": [8]},
+      {"criterion_id": "tone", "score": 4, "reasoning": "Friendly and natural.", "evidence_turns": [2]}
+    ],
+    "flags": [
+      {"tag": "compliance", "turn_index": 6, "reasoning": "Described NRE-account payment without the required NRI disclosure step."}
+    ]
+  },
+  "C-1155": {
+    "summary": "Warm, accurate and well-paced. Captured the upgrade motivation, defused the possession-delay worry with the RERA-registered date, and booked a visit. Financing discovery was light.",
+    "criterion_scores": [
+      {"criterion_id": "opening", "score": 5, "reasoning": "Identified self and reason, checked timing.", "evidence_turns": [0]},
+      {"criterion_id": "discovery", "score": 4, "reasoning": "Found the driver (upgrade) but did not probe budget/financing.", "evidence_turns": [2]},
+      {"criterion_id": "accuracy", "score": 5, "reasoning": "RERA-registered handover date is a correct, verifiable fact.", "evidence_turns": [4]},
+      {"criterion_id": "objection", "score": 4, "reasoning": "Directly reassured the delay worry with a concrete fact.", "evidence_turns": [4]},
+      {"criterion_id": "cta", "score": 4, "reasoning": "Booked a specific visit slot.", "evidence_turns": [6, 8]},
+      {"criterion_id": "tone", "score": 5, "reasoning": "Empathetic and natural throughout.", "evidence_turns": [4]}
+    ],
+    "flags": []
+  }
+}
