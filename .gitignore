@@ -1,0 +1,18 @@
+# env
+.env
+.venv/
+venv/
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# local db + generated data
+data/qa.db
+data/generated.json
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/
